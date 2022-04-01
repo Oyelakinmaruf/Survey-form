@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <section id="main">
+        <h1 id="title">Telecommunication Survey Form</h1>
+        <p id="description">connecting the world.................</p>
+        <form id="survey-form" action="">
+            <label id="name-label" for="name">Name</label>
+            <input placeholder="Enter your name" type="text" id="name" required>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <label id="number-label" for="Age">Age(Optional)</label>
+            <input placeholder="Age" type="number" id="number" name="age" min="0" max="99">
+            <p>Which option best describe your current role</p>
+            <select name="role" id="dropdown">
+                <option disabled selected value>Select current role</option>
+                <option value="Customer care">Customer care</option>
+                <option value="Technologists">Technologists</option>
+                <option value="Attendance">Attendance</option>
+                <option value="Server-operator">Server-operator</option>
+                <option value="Nettwork-manager">Nettwork-manager</option>
+            </select>
+            <P>Would you like to recommend us to your friends?</P>
+            <label>
+                <input type="radio" id="Definitely" name="bff" value="Definitely"> Definitely
+            </label>
+            <label>
+                <input type="radio" id="Maybe" name="bff" value="Maybe"> Maybe
+            </label>
+            <label>
+                <input type="radio" id="Not at all" name="bff" value="Not at all"> Not at all
+            </label>
+            <p>What's your favorite feature of our services</p>
+            <select name="services" id="dropdown">
+                <option disabled selected value>Select services</option>
+                <option value="Airtime/Data">Airtime/Data</option>
+                <option value="Cable payment">Cable payment</option>
+                <option value="Funds Transfer">Funds Transfer</option>
+                <option value="Wireless Communication">Wireless Communication</option>
+            </select>
+            <P>What would you like to see improved? (Check all that apply)</P>
+            <label for="Fast replies">
+                <input type="checkbox" id="Fast replies" name="taa" value="Fast replies">Fast replies
+            </label>
+            <label for="Fast deliveries">
+                <input type="checkbox" id="Fast deliveries" name="taa" value="Fast deliveries">Fast deliveries
+            </label>
+            <label for="Customer Suport">
+                <input type="checkbox" id="Customer Suport" name="taa" value="Customer Suport">Customer Suport
+            </label>
+            <label for="24/7hrs services">
+                <input type="checkbox" id="24/7hrs services" name="taa" value="24/7hrs services">24/7hrs services
+            </label>
+            <label for="Power supply">
+                <input type="checkbox" id="Power supply" name="taa" value="Power supply">Power supply
+            </label>
+            <p>Any comments or suggestion</p>
+            <textarea name="comments" id="textarea" placeholder="Enter comments or suggestion....."></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
